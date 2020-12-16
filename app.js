@@ -12,4 +12,4 @@ app.listen(port, () => {
 
 dbConnect();
 app.use(express.json());
-// app.use("/api", router);
+app.use("/api", router);
