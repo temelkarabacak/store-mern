@@ -1,7 +1,5 @@
-const { model } = require("mongoose");
-
 const mongoose = require('mongoose');
-const {Schema} = mongoose;
+const { Schema } = mongoose;
 
 const schema = new Schema({
     categoryName: {
@@ -27,4 +25,4 @@ const schema = new Schema({
     }
 });
 
-model.exports = Category = mongoose.model('Category', schema);
+module.exports = Category = mongoose.model('Category', schema);
